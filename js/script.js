@@ -41,16 +41,21 @@ allLinks.forEach(function(link){
 
 // Sticky navigation 
 const sectionHero = document.querySelector(".section-hero");
+const topBtn = document.querySelector(".top");
 const obs = new IntersectionObserver(
   function(entries){
     const ent = entries[0];
-    console.log(ent);
     if(ent.isIntersecting === false){
       document.body.classList.add("sticky");
+      // topBtn.style.display = "block";
+      topBtn.classList.toggle("active");
     }
 
     if(ent.isIntersecting){
       document.body.classList.remove("sticky");
+      // topBtn.style.display = "none";
+      topBtn.classList.remove("active");
+
     }
   },
   {
@@ -61,3 +66,13 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHero);
+
+// top function 
+topBtn.addEventListener('click',function(){
+  window.scrollTo({
+    top : 0,
+    behavior : "smooth"
+  });
+
+});
+

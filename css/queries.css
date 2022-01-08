@@ -6,7 +6,7 @@
  /* ********************** */
  /* BELOW 1344px (samller desktops ) */
  /* ********************** */
- @media (max-width: 84em){
+@media (max-width: 84em){
   .hero{
     max-width: 120rem;
   }
@@ -18,49 +18,53 @@
   .gallery{
     grid-template-columns: repeat(2,1fr);
   }
- }
+
+  button.top{
+    background-color: #f8d8bd;
+  }
+}
 /* ********************** */
  /* BELOW 1200px (landscape Tablets ) */
  /* ********************** */
- @media (max-width: 75em) {
-   html{
+@media (max-width: 75em) {
+  html{
      /* 9px / 16px = 56.25% */
-     font-size: 56.25%;
-   }
+    font-size: 56.25%;
+  }
 
-   .grid{
-     column-gap: 4.8rem;
-     row-gap: 6.4rem;
-   }
+  .grid{
+  column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
 
-   .heading-secondary{
-     font-size: 3.6rem;
-   }
+  .heading-secondary{
+    font-size: 3.6rem;
+  }
 
-   .heading-tertiary{
-     font-size: 2.4rem;
-   }
+  .heading-tertiary{
+    font-size: 2.4rem;
+  }
 
-   .header{
-     padding: 0 3.2rem;
-   }
+  .header{
+    padding: 0 3.2rem;
+  }
 
-   .main-nav ul{
-     gap: 3.2rem;
-   }
+  .main-nav ul{
+  gap: 3.2rem;
+  }
 
-   .hero{
-     gap: 4.8rem;
-   }
+  .hero{
+    gap: 4.8rem;
+  }
 
-   .testimonials-container{
+  .testimonials-container{
     padding: 9.6rem 3.2rem;
   }
- }
+}
  /* ********************** */
  /* BELOW 944px (landscape Tablets ) */
  /* ********************** */
- @media (max-width: 59em){
+@media (max-width: 59em){
   html{
     /* 8px / 16 = 50% */
     font-size: 50%;
@@ -172,12 +176,12 @@
   .main-nav ul a:visited{
     font-size: 3rem;
   }
- }
+}
 
 /* ********************** */
 /* BELOW 704px (smaller Tablets ) */
 /* ********************** */
- @media (max-width: 44em){
+@media (max-width: 44em){
   .grid--3-cols,
   .grid--4-cols{
     grid-template-columns: repeat(2,1fr);
@@ -210,7 +214,7 @@
     grid-column: span 2;
     margin-bottom: 3.2rem;
   }
- }
+}
 /* ********************** */
 /* BELOW 544px (Phones) */
 /* ********************** */
